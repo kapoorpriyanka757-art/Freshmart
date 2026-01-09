@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: rgb(205, 149, 81);
+        }
+        .main{
+        width: 100%;
+        background-color: #2f3e46;
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .search{
+        width: 40%;
+        min-width: 260px;
+        padding: 15px 20px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .container{
+        width: 100%;
+background-color:rgb(205, 149, 81);
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        padding: 40px 60px;
+    
+
+
+    }
+    .a1{
+       
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+        
+    }
+.a1 img{
+    width:180px;
+    height: 200px;
+    object-fit:cover;
+border-radius: 10px;
+}
+
+   
+  
+    </style>
+</head>
+<body>
+     <div class="main">
+        <input type="text" placeholder="Search here..." class="search">
+
+    </div>
+    <div class="container">
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.PLQUtENCqrMg_rF8_g0QAQHaHa?w=188&h=188&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.udq1KEPVfCy0CxFnvMwoyAHaLW?w=135&h=207&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.9mZE68iJukITSsFQOfQ76QHaJV?w=159&h=200&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.cJ1gOKvNLcSeRAWU89GHxQHaI2?w=159&h=190&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.D6pHNr6G5a-yDO5SzlLr_wHaHa?w=195&h=195&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.idwI_kQTo2mml8apBBTbRwHaJx?w=144&h=191&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.HTt1rcY_t9eprdGNZlFnrwHaHa?w=192&h=192&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.6AS9r8wpEHAv3YM8m7BIFAHaJK?w=145&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.awvClNzojWbJuH5vqLUdOwHaHa?w=185&h=185&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.mB4iflTx7L-gRM-hJib2aQHaGr?w=222&h=200&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.x35IbiOexmuEoY82Jac6zgHaJN?w=149&h=185&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.ut6B72ZE94ilT0UBKqHA1gHaKd?w=141&h=199&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+    </div>
+    <!-- ✅ SEARCH SCRIPT (IMPORTANT) -->
+<script>
+    const searchBox = document.querySelector(".search");
+    const cards = document.querySelectorAll(".card");
+
+    searchBox.addEventListener("keyup", function () {
+        let value = searchBox.value.toLowerCase();
+
+        cards.forEach(card => {
+            let text = card.innerText.toLowerCase();
+            card.style.display = text.includes(value) ? "block" : "none";
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: rgb(205, 149, 81);
+        }
+        .main{
+        width: 100%;
+        background-color: #2f3e46;
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .search{
+        width: 40%;
+        min-width: 260px;
+        padding: 15px 20px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .container{
+        width: 100%;
+background-color:rgb(205, 149, 81);
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        padding: 40px 60px;
+    
+
+
+    }
+    .a1{
+       
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+        
+    }
+.a1 img{
+    width:180px;
+    height: 200px;
+    object-fit:cover;
+border-radius: 10px;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <input type="text" placeholder="Search here..." class="search">
+
+    </div>
+    <div class="container">
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.7Xx-PvVSGPzbJoIlRNLC3AHaHa?w=192&h=192&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.vgWdxAMOiqPffDekMdpq9gHaHa?w=182&h=182&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.OQETHVeD5V9evZBJtc62-wHaHa?w=189&h=189&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.97bqkEGZqAt7xMGQxiksMwHaJl?w=153&h=198&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.ZzBx-JzgU-SbFtz3_FyNXQHaHa?w=182&h=182&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.46peYRo0BREKhVffHN6LBAHaHa?w=191&h=191&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.z6xKEXC2k8TGEz9GVikkkgHaGk?w=209&h=185&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.obTlZ2nlUllDhJBoQMkbxgHaHa?w=176&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.uv8HhPTn5f-Nn43e6bhHdQAAAA?w=135&h=193&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.jvIz84mNsRtR_4K9oYFsQAAAAA?w=150&h=193&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.GwGGZnChtGoFDihPNOz8QwHaKB?w=130&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://www.bing.com/th/id/OIP.iPwJ_KyKfp4GogHj0epDeAHaHa?w=194&h=193&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.P70Gv0JyCrH1WO57BER8BAHaHa?w=192&h=192&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.z-VeznTKngKhPx7ueCoEsQHaHa?w=198&h=198&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+        <div class="a1">
+            <img src="https://th.bing.com/th/id/OIP.WFdy66m6eOffqSm3vKvOgAHaDz?w=317&h=179&c=7&r=0&o=7&pid=1.7&rm=3">
+        </div>
+    </div>
+    <!-- ✅ SEARCH SCRIPT (IMPORTANT) -->
+<script>
+    const searchBox = document.querySelector(".search");
+    const cards = document.querySelectorAll(".card");
+
+    searchBox.addEventListener("keyup", function () {
+        let value = searchBox.value.toLowerCase();
+
+        cards.forEach(card => {
+            let text = card.innerText.toLowerCase();
+            card.style.display = text.includes(value) ? "block" : "none";
+        });
+    });
+</script>
+</body>
+</html>

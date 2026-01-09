@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grocery Store Reviews</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:cadetblue;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            margin: auto;
+            padding: 10px 0;
+            border-bottom: 1px solid black;
+            background-color: cadetblue;
+        }
+        .logo{
+            width: 180px;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+            
+        }
+        nav ul li{
+            margin: 0 20px;
+        }
+        nav ul li a{
+            font-size: 25px;
+            font-weight:bold;
+            color: #222;
+            text-transform: uppercase;
+        }
+    nav ul li a:hover{
+        color:#3e4361;
+        border-bottom: 2px solid #3e4361;
+    }
+    
+    
+
+    
+ 
+
+        .reviews-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .reviews-section h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .review-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .review-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #34495e;
+        }
+
+        .review-rating {
+            color: #f1c40f;
+            font-size: 1.1em;
+        }
+
+        .review-text {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            .review-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <img src="https://th.bing.com/th/id/OIP.p-EPtWP-eP1Jd8nKeQR9vwHaHa?w=196&h=196&c=7&r=0&o=7&pid=1.7&rm=3" class="logo">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="review.html">Review</a></li>
+    </ul>
+   
+    </nav>
+    <div class="reviews-section">
+        <h1>Customer Reviews</h1>
+
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-name">Aarav Sharma</span>
+                <span class="review-rating">5/5</span>
+            </div>
+            <p class="review-text">
+                Fresh produce and very clean store. The staff was helpful and prices were reasonable.
+            </p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-name">Neha Patel</span>
+                <span class="review-rating">4/5</span>
+            </div>
+            <p class="review-text">
+                Good variety of groceries, but sometimes the checkout lines are long.
+            </p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-name">Rohan Verma</span>
+                <span class="review-rating">3/5</span>
+            </div>
+            <p class="review-text">
+                Fruits fresh the aur same day delivery mil gyi.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

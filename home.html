@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+        .hero{
+            min-height: 100vh;
+            background: url('https://th.bing.com/th/id/OIP.lttU0M2kx5tgWtIlj57ICwHaE7?w=267&h=180&c=7&r=0&o=7&pid=1.7&rm=3');
+            background-position:900px;
+            background-size:45%;
+            background-repeat: no-repeat;
+        
+            
+
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 98%;
+            margin: auto;
+            padding: 10px 0;
+            border-bottom: 2px solid #6a9850;
+        }
+        .logo{
+            width: 180px;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+            
+        }
+        nav ul li{
+            margin: 0 20px;
+        }
+        nav ul li a{
+            font-size: 25px;
+            font-weight:bold;
+            color: #222;
+            text-transform: uppercase;
+        }
+    nav ul li a:hover{
+        color:#3e4361;
+        border-bottom: 2px solid #3e4361;
+    }
+       .content{
+        position: absolute;
+        top: 35%;
+        left: 90px;
+    }
+    h2{
+        color: darkblue;
+        font-size: 52px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    h2 span{
+        color: #6a9850;
+
+    }
+    p{
+        color: #353535;
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: bold;
+        
+        
+
+    }
+    .content button{
+        margin-top: 50px;
+        background:#6a9850;
+        color: white;
+        padding: 13px 45px;
+        border: 2px solid #6a9850;
+        border-radius: 2rem;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s;
+
+    }
+    .conten button:hover{
+        scale:1;
+        
+    }
+    .content button.know{
+        color: #6a9850;
+        background: transparent;
+        margin-left: 25px;
+
+    }
+    .content button.know:hover{
+        background: #6a9850;
+        color: white;
+        scale: 1;
+    }
+    
+    </style>
+</head>
+<body>
+<div class="hero">
+    <nav>
+    <img src="https://th.bing.com/th/id/OIP.p-EPtWP-eP1Jd8nKeQR9vwHaHa?w=196&h=196&c=7&r=0&o=7&pid=1.7&rm=3" class="logo">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="review.html">Review</a></li>
+    </ul>
+    </nav>
+    <div class="content">
+        <h2>Your Groceries,<br> Deliverd Fresh <br> in <span>15 min</span></h2>
+        <p>Experiance the convenience of fresh groceries deliverd to your door <br>within 15 minutes-quality, speed, and satisfaction guaranteed every time.</p>
+        <button>Order Now</button>
+        <button class="know">Know More</button>
+        
+        
+    </div>
+</div>
+</body>
+</html>
